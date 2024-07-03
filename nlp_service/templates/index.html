@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to Text Summarizer</h1>
+    <form action="/predict" method="post">
+        <textarea name="text" placeholder="Enter text to summarize" required>{{ request.form.text if request.form.text }}</textarea>
+        <button type="submit">Summarize</button>
+    </form>
+    <div class="prediction" style="margin-top: 20px;">
+        <h2>Summary</h2>
+        {% if prediction %}
+            <pre>{{ prediction }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>

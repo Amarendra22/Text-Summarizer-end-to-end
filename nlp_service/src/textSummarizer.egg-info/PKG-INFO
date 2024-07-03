@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: textSummarizer
+Version: 0.0.0
+Summary: A small Python package for NLP app
+Home-page: https://github.com/Amarendra22/Text-Summarizer-end-to-end
+Author: Amarendra22
+Author-email: amarendramohan2211@gmail.com
+Project-URL: Bug Tracker, https://github.com/Amarendra22/Text-Summarizer-end-to-end/issues
+Description-Content-Type: text/markdown
+
+# Text Summarizer
+
+This is a text summarization project using FastAPI.
